@@ -19,7 +19,7 @@ jobs:
       with:
         source_file: 'input'
         destination_repo: 'Denmark14/TestFileRepo'
-        destination_folder: 'input'
+        destination_folder: './'
         user_email: '<support+actions@github.com>'
         user_name: 'github-actions-bot'
-        commit_message: 'A custom message for the commit'
+        commit_message: 'Updating gamedata files'
