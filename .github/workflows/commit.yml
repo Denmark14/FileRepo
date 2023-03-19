@@ -18,7 +18,7 @@ jobs:
         API_TOKEN_GITHUB: ${{ secrets.DENMARK_AUTOMATION_TOKEN }}
       with:
         source_file: 'input'
-        destination_repo: 'Denmark14/release-test'
+        destination_repo: 'Denmark14/TestFileRepo'
         destination_folder: 'input'
         user_email: 'example@email.com'
         user_name: 'Denmark14'
