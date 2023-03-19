@@ -1,0 +1,25 @@
+name: Send updates to dependent repo
+
+on:
+  push:
+    branches: 
+      - main
+
+jobs:
+  copy-file:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Pushes test file
+      uses: Denmark14/FileRepo@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.DENMARK_AUTOMATION_TOKEN }}
+      with:
+        source_file: 'input'
+        destination_repo: 'Denmark14/release-test'
+        destination_folder: 'input'
+        user_email: 'example@email.com'
+        user_name: 'Denmark14'
+        commit_message: 'A custom message for the commit'
