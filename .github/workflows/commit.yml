@@ -20,6 +20,6 @@ jobs:
         source_file: 'input'
         destination_repo: 'Denmark14/TestFileRepo'
         destination_folder: 'input'
-        user_email: 'example@email.com'
-        user_name: 'Denmark14'
+        user_email: '<support+actions@github.com>'
+        user_name: 'github-actions-bot'
         commit_message: 'A custom message for the commit'
